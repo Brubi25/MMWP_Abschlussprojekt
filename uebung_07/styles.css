@@ -1,0 +1,28 @@
+.dragover{
+    background-color: rgb(214, 224, 228);
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+.dropzone > *{
+    margin: 10px;
+}
+
+.task{
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    display: flex;
+    gap: 1px;
+}
+
+.task p{
+    margin: 0;
+    padding: 5px;
+    margin-right: auto;
+}

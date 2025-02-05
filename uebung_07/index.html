@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Übung 07</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+      
+      <img id="img1" class="draggable" draggable="true" src="https://placehold.co/100">
+      <img id="img2" class="draggable" draggable="true" src="https://placehold.co/200">
+
+      <div class="container">
+        <h3>ToDo</h3>
+        <h3>WIP</h3>
+        <h3>Done</h3>
+        <h3>Trash
+          <input type="button" value="löschen" id="delete">
+        </h3>
+        <p class="dropzone" id="todo" style="min-height: 300px; min-width: 20vw; border-style: solid;"></p>
+        <p class="dropzone" style="min-height: 300px; min-width: 20vw; border-style: solid;"></p>
+        <p class="dropzone" id="done" style="min-height: 300px; min-width: 20vw; border-style: solid;"></p>
+        <p class="dropzone" id="trash" style="min-height: 300px; min-width: 20vw; border-style: solid;"></p>
+      </div>
+
+      <input placeholder="Neue Aufgabe" id="newtask">
+      <input type="color" id="color" value="#ffffff">
+      <input type="button" id="addtask" value="hinzufügen">
+      
+  </body>
+</html>
