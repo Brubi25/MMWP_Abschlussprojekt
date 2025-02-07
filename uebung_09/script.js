@@ -4,6 +4,8 @@ let inputs = form.getElementsByTagName("input");
 document.getElementById("submit").onclick = (event) => {
     event.preventDefault();
     const map = new Map();
+    let starttime = Date.now();
+
     for(let i = 0; i < inputs.length; i++){
         removeHighlight(inputs[i]);
         if(inputs[i].type == "checkbox"){
@@ -12,7 +14,13 @@ document.getElementById("submit").onclick = (event) => {
             map.set(inputs[i].id, inputs[i].value);   
         }
     }
-    if(!checkValues(map)){
+
+    let ck = !checkValues(map)
+
+    let time = Date.now() - starttime;
+    console.log(time + "ms");
+
+    if(ck){
         let msg = "Werte: \n";
         map.keys().forEach(element => {
             msg += element + ": " + map.get(element) + "\n";
