@@ -40,11 +40,11 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Kniffel in Java
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionProjects">
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
                   <div class="accordion-body px-5">
                     Abschlussprojekt eines meiner Programmierungsmodule an der HTWK. Geschrieben in Java, mit umfänglichem Nutzen der Swing-Libary
                     <div class="row gap-3 mt-3">
@@ -132,6 +132,19 @@
                 </div>
               </div>
 
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    DMX Projekt
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
+                  <div class="accordion-body">
+                    Projekt zum kennenlernen des DMX Protokolls, bei welchem verschiedene Scheinwerfer zu einem Song synchronisiert werden sollten. <a href="https://github.com/Skzter/dmx_dt">Git-Repo</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -168,7 +181,40 @@
             
           </div>
         </div>
+      </div>
 
+      <div class="row gap-3 mt-3">
+        <div class="card col-lg">
+          <div class="card-body">
+            <p class="card-title float-start m-0">MMWP-Aufgaben</p>
+            <button type="button" class="btn btn-outline-secondary float-end w-25" data-bs-toggle="modal" data-bs-target="#modalAufgaben">Aufgaben</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Kniffel3 -->
+      <div class="modal fade" id="modalAufgaben" tabindex="-1" aria-labelledby="modalAufgaben" aria-hidden="true">
+        <div class="modal-dialog w-100">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">MMWP Aufgaben</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="uebung_00">Aufgabe 1<a></a></li>
+                <li class="list-group-item"><a href="uebung_01">Aufgabe 2<a></a></li>
+                <li class="list-group-item"><a href="uebung_03">Aufgabe 3<a></a></li>
+                <li class="list-group-item"><a href="uebung_04">Aufgabe 4<a></a></li>
+                <li class="list-group-item"><a href="uebung_05">Aufgabe 5<a></a></li>
+                <li class="list-group-item"><a href="uebung_06">Aufgabe 6<a></a></li>
+                <li class="list-group-item"><a href="uebung_07">Aufgabe 7<a></a></li>
+                <li class="list-group-item"><a href="uebung_08">Aufgabe 8<a></a></li>
+                <li class="list-group-item"><a href="uebung_09">Aufgabe 9<a></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     
