@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <title>Projekte</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link
+            href="../style.css"
+            rel="stylesheet"
+        >
+    </head>
+
+    <body class="p-3">
+             
+        <main class="container fs-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../">Übersicht</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a class="dropdown-toggle text-decoration-none" style="color: inherit" type="button" data-bs-toggle="dropdown" aria-expanded="false">Projekte
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" type="button" href="Leben/">Leben</a></li>
+                    <li><a class="dropdown-item" type="button" href="Bericht/">Bericht</a></li>
+                  </ul>
+                </li>
+              </ol>
+            </nav> 
+
+            <div class="row mt-3">
+                <div class="card col-lg shadow" id="Kniffel">
+                    <div class="card-body">
+                    <h3 class="card-title">Kniffel</h3>
+                    <p class="card-text">
+                        Als Abschlussprojekt eines Programmierungsmodul im 2. Semester mussten wir in 3er Gruppen ein selbstgewähltes Programm mit GUI erstellen. Meine Gruppe hat sich für Kniffel entschieden, welches wir in Java mittels weitläufiger Nutzung der Swing-Libary entwickelten. 
+                        <button type="button" class="col btn w-50 float-end" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                        <img class="rounded shadow-lg p-0 h-100 w-100" src="../images/kniffel3.webp" loading="lazy">
+                        </button>
+                        <br><br>
+                        Anfangs teilte ich mich selber hauptsächlich für das Backend des Projektes ein, konkret also der Modellierung der Logik des Spieles, aus welchem letztenendes über 15 Klassen enstanden sind. <br><br>
+                        Allerdings bin ich letztenendes auch nicht um die Entwicklung der GUI herum gekommen, und musste leider feststellen das die Nutzung der Swing-Libary deutlich gewöhnungsbedürtiger ist als Anfänglich angenommen.
+                        <br>
+                        Trotzdem bin ich mit Ergebniss zufrieden, da es, obwohl visuel nur begrenzt ansprechend, alle wichtigen Funktionen auf für mich zufiredenstellende Weise umsetzt.
+                        <br><br>
+                        <button type="button" class="col btn w-50 float-start" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                        <img class="rounded shadow p-0 w-100" src="../images/kniffel1.png" loading="lazy">
+                        </button>
+                        <button type="button" class="col btn w-50 float-end" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                        <img class="rounded shadow p-0 h-100 w-100" src="../images/kniffel2.png" loading="lazy">
+                        </button>
+                            
+                        
+                            <!-- Modal Kniffel1-->
+                            <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" src="../images/kniffel1.png" loading="lazy">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <!-- Modal Kniffel2 -->
+                            <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" src="../images/kniffel2.png" loading="lazy">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <!-- Modal Kniffel3 -->
+                            <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" src="../images/kniffel3.webp" loading="lazy">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <a href="download/Abgabeordner.zip" download>Download</a> 
+            </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

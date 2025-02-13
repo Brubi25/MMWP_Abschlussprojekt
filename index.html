@@ -16,18 +16,33 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="p-3">
-    <div class="container fs-5">
+    <main class="container fs-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Übersicht</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <a class="dropdown-toggle text-decoration-none" style="color: inherit" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" type="button" href="Leben/">Leben</a></li>
+                <li><a class="dropdown-item" type="button" href="Projekte/">Projekte</a></li>
+                <li><a class="dropdown-item" type="button" href="Bericht/">Bericht</a></li>
+                <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAufgaben">Aufgaben</button></li>
+              </ul>
+            </li>
+          </ol>
+        </nav>  
 
       <div class="row gap-3">
 
-        <div class="card col-lg-auto" itemscope itemtype="https://schema.org/Person">
+        <div class="card col-lg-auto shadow" itemscope itemtype="https://schema.org/Person">
           <div class="card-body">
             <h1 class="card-title text-center">Bruno Bittner</h1>
             <img class="card-img mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Profile_photo_placeholder_square.svg" alt="Card image cap">
           </div>
         </div>
         
-        <div class="card col-lg">
+        <div class="card col-lg shadow">
             <div class="card-body">
               <h3 class="card-title">Profil</h3>
               <p class="card-text">Ich heiße Bruno, bin 19 Jahre alt und studiere seit 2023 Medieninformatik in Leipzig. In meiner Freizeit spiele ich oft Computerspiele, oder verbringe meine Zeit anderweitig hinter einem Bildschirm, wodurch mich Informatik auch schon länger interessiert. Ansonsten gehe ich gerne auch mal Bouldern, oder mit Freunden Volleyball spielen.
@@ -41,7 +56,7 @@
 
       <div class="row gap-3 mt-3">
 
-        <div class="card col-lg" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="card col-lg shadow" itemscope itemtype="https://schema.org/SoftwareApplication">
           <div class="card-body">
             <h3 class="card-title">Projekte</h3>
             <div class="accordion" id="accordionProjects">
@@ -54,61 +69,9 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
                   <div class="accordion-body px-5">
-                    Abschlussprojekt eines meiner Programmierungsmodule an der HTWK. Geschrieben in Java, mit umfänglichem Nutzen der Swing-Libary
-                    <div class="row gap-3 mt-3">
-                      <button type="button" class="col btn p-0" data-bs-toggle="modal" data-bs-target="#modalImage1">
-                        <img class="rounded shadow p-0 h-100 w-100" src="images/kniffel1.png" loading="lazy">
-                      </button>
-                      <button type="button" class="col btn p-0" data-bs-toggle="modal" data-bs-target="#modalImage2">
-                        <img class="rounded shadow p-0 h-100 w-100" src="images/kniffel2.png" loading="lazy">
-                      </button>
-                      <button type="button" class="col btn p-0" data-bs-toggle="modal" data-bs-target="#modalImage3">
-                        <img class="rounded shadow p-0 h-100 w-100" src="images/kniffel3.webp" loading="lazy">
-                      </button>
-                    </div> 
-                    
-                      <!-- Modal Kniffel1-->
-                      <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <img class="img-fluid" src="images/kniffel1.png" loading="lazy">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Modal Kniffel2 -->
-                      <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <img class="img-fluid" src="images/kniffel2.png" loading="lazy">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Modal Kniffel3 -->
-                      <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <img class="img-fluid" src="images/kniffel3.webp" loading="lazy">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
+                    Abschlussprojekt eines meiner Programmierungsmodule an der HTWK. Geschrieben in Java, mit umfänglichem Nutzen der Swing-Libary.
+                    <br>
+                    <a type="button" class="btn btn-outline-secondary mt-3" href="Projekte#Kniffel">Mehr Dazu</a>
                   </div>
                 </div>
               </div>
@@ -122,7 +85,9 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
                   <div class="accordion-body">
-                    Ebenfalls im Rahmen eines Modules meines Studiums entstanden, wurde dieses kleine Spiel in C++ geschrieben. Da es sich um mein erstes objektorientiertes Projekt handelt, sind einige der Ansätze noch etwas umständlich. <a href="download/Abgabeordner.zip" download>Download</a> 
+                    Ebenfalls im Rahmen eines Modules meines Studiums entstanden, wurde dieses kleine Spiel in C++ geschrieben. Da es sich um mein erstes objektorientiertes Projekt handelt, sind einige der Ansätze noch etwas umständlich. 
+                    <br>
+                    <a type="button" class="btn btn-outline-secondary mt-3" href="Projekte#Platformer">Mehr Dazu</a>
                   </div>
                 </div>
               </div>
@@ -135,7 +100,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionProjects">
                   <div class="accordion-body">
-                    Aus einer Belegaufgabe für das Modul, aus dem auch diese <a href="https://imweb.imn.htwk-leipzig.de/~bbittner/MMWP/Beleg2/">Website</a> entstanden ist, habe ich diesen one-pager über Bouldern und Klettern in Leipzig entstanden.
+                    Für eine Belegaufgabe für das Modul, aus dem auch diese <a href="https://imweb.imn.htwk-leipzig.de/~bbittner/MMWP/Beleg2/" target="_blank">Website</a> entstanden ist, habe ich diesen one-pager über Bouldern und Klettern in Leipzig erstellt.
                   </div>
                 </div>
               </div>
@@ -160,9 +125,10 @@
 
       <div class="row gap-3 mt-3" itemscope itemtype="https://schema.org/Person">
 
-        <div class="card col-lg">
+        <div class="card col-lg shadow">
           <div class="card-body">
-            <h3 class="card-title">Lebenslauf</h3>
+            <h3 class="card-title">Lebenslauf <a type="button" class="btn btn-outline-secondary float-end" href="Leben#Lebenslauf">Mehr</a></h3>
+            
             <ul>
               <li class="my-3"><b>Abitur in Sachsen</b><br>Sommer 2023<br>LOPS Leipzig, Sachsen</li>
               <li class="my-3"><b>Arbeit in IT</b><br>Herbst 2023<br>4 Monate<br>Wisamar Bildungsgeselschaft Leipzig</li>
@@ -171,31 +137,20 @@
           </div>
         </div>
 
-        <div class="card col-lg">
+        <div class="card col-lg shadow">
           <div class="card-body">
-            <h3 class="card-title">Fähigkeiten</h3>
-            <p class="my-3"><b>Programmierung</b><br>
-              C++, Java, JS, HTML, SQL
-            </p>
-            <p class="my-3"><b>Weitere</b><br>
-              regelmäßige Nutzung von git<br>
-              Excel<br>
-            </p>
-            <p class="my-3"><b>Sprache</b><br>
-              Deutsch (Muttersprache)<br>
-              Englisch (C1)<br>
-              Französisch (B1)<br>
-            </p>
+            <h3 class="card-title">Fähigkeiten <a type="button" class="btn btn-outline-secondary float-end" href="Leben#Faehigkeiten">Mehr</a></h3>
+            <ul>
+              <li class="my-3"><b>Programmierung</b><br>C++, Java, JS, HTML, SQL</li>
+              <li class="my-3"><b>Sprache</b><br>
+                Deutsch (Muttersprache)<br>
+                Englisch (C1)<br>
+                Französisch (B1)<br>
+              </li>
+              <li class="my-3"><b>Weitere</b><br>regelmäßige Nutzung von git<br>Excel</li>
+            </ul>
             
-          </div>
-        </div>
-      </div>
-
-      <div class="row gap-3 mt-3">
-        <div class="card col-lg">
-          <div class="card-body">
-            <p class="card-title float-start m-0">MMWP-Aufgaben</p>
-            <button type="button" class="btn btn-outline-secondary float-end w-25" data-bs-toggle="modal" data-bs-target="#modalAufgaben">Aufgaben</button>
+            
           </div>
         </div>
       </div>
@@ -224,7 +179,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
