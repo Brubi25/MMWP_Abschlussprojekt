@@ -2,6 +2,18 @@
     max-width: 250px;
 }
 
+.projekt-img{
+    max-width: 300px;
+}
+
+.projekt-img-wider{
+    max-width: 500px;
+}
+
 body{
     background-color: rgb(223, 223, 223) !important;
+}
+
+.widemodal{
+    max-width: 75vw;
 }
